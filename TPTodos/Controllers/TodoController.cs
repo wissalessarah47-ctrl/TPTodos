@@ -7,6 +7,8 @@ using TPTodos.ViewModels;
 
 namespace TPTodos.Controllers
 {
+    [AuthFilter]
+    [ThemeFilter]
     public class TodoController : Controller
     {
         ISessionManagerService session;
